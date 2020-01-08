@@ -1,14 +1,17 @@
 import React from "react";
-import Table from "@material-ui/core/Table";
-import TableHead from "@material-ui/core/TableHead";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableFooter from "@material-ui/core/TableFooter";
-import TablePagination from "@material-ui/core/TablePagination";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import Avatar from "@material-ui/core/Avatar";
+import {
+  Paper,
+  TableContainer,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  TableFooter,
+  TablePagination,
+  Avatar,
+  Typography
+} from "@material-ui/core";
 
 import { tableContainerStyle } from "./styles";
 import UsersPagination from "./pagination";
@@ -42,9 +45,19 @@ const UsersTable = ({ data }) => {
     setCurrentPage(0);
   };
 
+  if (usersData && !usersData.length) {
+    return (
+      <TableContainer className={classes.container}>
+        <Typography variant="h4" className={classes.title}>
+          No results found
+        </Typography>
+      </TableContainer>
+    );
+  }
+
   return (
     <TableContainer component={Paper} className={classes.container}>
-      <Table aria-label="custom pagination table">
+      <Table aria-label="pagination table">
         <TableHead>
           <TableRow>
             <TableCell></TableCell>

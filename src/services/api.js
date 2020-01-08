@@ -26,7 +26,7 @@ instance.interceptors.response.use(
   error => {
     return {
       status: "failed",
-      message: error.error,
+      message: error.message,
       data: []
     };
   }
