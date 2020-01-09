@@ -4,6 +4,10 @@
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Run this command to install package dependencies<br />
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
@@ -31,3 +35,6 @@ Your app is ready to be deployed!
   - `index.js` : Entry point of the application
   - `serviceWorker.js` : Service worker
 - `package.json` : Package manager
+
+### Snapshot
+![Application Snapshot](snapshot.JPG)
