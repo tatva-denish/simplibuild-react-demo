@@ -1,6 +1,6 @@
 {
   "name": "simplibuild-react-demo",
-  "homepage": "/",
+  "homepage": "/React-Demos/simplibuild-react-demo/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

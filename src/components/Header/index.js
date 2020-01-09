@@ -13,13 +13,14 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Users
           </Typography>
         </Toolbar>
       </AppBar>
+      <Toolbar />
     </div>
   );
 };

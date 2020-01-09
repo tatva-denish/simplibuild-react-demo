@@ -17,6 +17,7 @@ instance.interceptors.request.use(
 // Add a response interceptor for global notifications and response log
 instance.interceptors.response.use(
   response => {
+    // Response formate on API success
     return {
       status: "success",
       message: "",
@@ -24,6 +25,7 @@ instance.interceptors.response.use(
     };
   },
   error => {
+    // Response formate on API failed with error message
     return {
       status: "failed",
       message: error.message,

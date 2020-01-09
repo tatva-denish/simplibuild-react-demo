@@ -8,18 +8,30 @@ import LastPageIcon from "@material-ui/icons/LastPage";
 
 import { paginationStyle } from "./styles";
 
+/**
+ * User pagination component
+ * @param {number} count
+ * @param {number} page
+ * @param {number} rowsPerPage
+ * @param {function} onChangePage
+ */
+
 const UsersPagination = ({ count, page, rowsPerPage, onChangePage }) => {
   const classes = paginationStyle();
 
+  // Navigate to first page
   const handleFirstPageClick = event => {
     onChangePage(event, 0);
   };
+  // Navigate to last page
   const handleLastPageClick = event => {
     onChangePage(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
+  // Navigate to previous page
   const handleBackClick = event => {
     onChangePage(event, page - 1);
   };
+  // Navigate to next page
   const handleNextClick = event => {
     onChangePage(event, page + 1);
   };

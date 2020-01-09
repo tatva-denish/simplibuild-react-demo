@@ -10,14 +10,16 @@ import rootReducer from "../reducers";
 const configureStore = (initialState = {}) => {
   let composeEnhancers = compose;
 
+  // Disable Redux dev tools for production mode
   if (process.env.NODE_ENV !== "production" && typeof window === "object") {
     /* eslint-disable no-underscore-dangle */
     if (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
       composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({});
     /* eslint-enable */
   }
-
+  // Added thunk middleware
   const enhancers = [applyMiddleware(thunk)];
+  // Created store
   const store = createStore(
     rootReducer,
     initialState,

@@ -10,6 +10,7 @@ const initialState = {
 // Users Reducer
 const usersReducer = (state = initialState, action) => {
   switch (action.type) {
+    // Set users data on success
     case GET_USERS_SUCCESS:
       return {
         ...state,
@@ -17,6 +18,7 @@ const usersReducer = (state = initialState, action) => {
         results: action.payload.results,
         info: action.payload.info
       };
+    // Set error message on failed
     case GET_USERS_FAILED:
       return { ...state, error: action.payload };
     default:

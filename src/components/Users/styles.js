@@ -12,7 +12,8 @@ const paginationStyle = makeStyles(theme => ({
 const tableContainerStyle = makeStyles(theme => ({
   container: {
     marginTop: "40px",
-    marginBottom: "40px"
+    marginBottom: "40px",
+    maxHeight: 500
   }
 }));
 
