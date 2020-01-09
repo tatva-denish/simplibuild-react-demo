@@ -1,5 +1,5 @@
 # Simplibuild React App
-It is a demo application to display user listing. We have built it with React, Redux and Material UI libraries. This application is bootstrapped with `Create React App` which provide default support of ES6 standards. we have used eslint with `Airbnb` standards in react development. 
+It is a demo application to display user listing. We have built it with React, Redux and Material UI libraries. This application is bootstrapped with `Create React App` which provide default support of ES6 standards. we generally use eslint with `Airbnb` standards in react development but not in this case.
 
 ## Available Scripts
 
