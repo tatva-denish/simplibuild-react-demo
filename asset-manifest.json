@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/simplibuild-react-demo/static/css/main.795991f2.chunk.css",
+    "main.js": "/simplibuild-react-demo/static/js/main.412fc2dd.chunk.js",
+    "main.js.map": "/simplibuild-react-demo/static/js/main.412fc2dd.chunk.js.map",
+    "runtime-main.js": "/simplibuild-react-demo/static/js/runtime-main.dcd9fd89.js",
+    "runtime-main.js.map": "/simplibuild-react-demo/static/js/runtime-main.dcd9fd89.js.map",
+    "static/js/2.ea5324a0.chunk.js": "/simplibuild-react-demo/static/js/2.ea5324a0.chunk.js",
+    "static/js/2.ea5324a0.chunk.js.map": "/simplibuild-react-demo/static/js/2.ea5324a0.chunk.js.map",
+    "index.html": "/simplibuild-react-demo/index.html",
+    "precache-manifest.031f9e900309dd63a24d3d8df0854900.js": "/simplibuild-react-demo/precache-manifest.031f9e900309dd63a24d3d8df0854900.js",
+    "service-worker.js": "/simplibuild-react-demo/service-worker.js",
+    "static/css/main.795991f2.chunk.css.map": "/simplibuild-react-demo/static/css/main.795991f2.chunk.css.map",
+    "static/js/2.ea5324a0.chunk.js.LICENSE": "/simplibuild-react-demo/static/js/2.ea5324a0.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dcd9fd89.js",
+    "static/js/2.ea5324a0.chunk.js",
+    "static/css/main.795991f2.chunk.css",
+    "static/js/main.412fc2dd.chunk.js"
+  ]
+}
